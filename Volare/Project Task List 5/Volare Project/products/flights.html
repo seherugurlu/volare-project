@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search - Volare</title>
+    <link rel="stylesheet" href="../css/flights.css">
+    <link rel="icon" type="image/x-icon" href="../Images/airplane-png-1.png">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <h1 class="logo">Volare</h1>
+            <nav>
+                <a href="../text/volarehome.html">Home</a>
+                <a href="../products/flights.html">Flights</a>
+                <a href="../products/hotels.html">Hotels</a>
+                <a href="../products/rentals.html">Car Rentals</a>
+                <a href="../products/contact.html">Contact</a>
+                <div class="topnav">
+                    <input type="text" placeholder="Search..">
+                </div>
+            </nav>
+        </div>
+        <div class="buttons">
+            <button class="signin">Sign in</button>
+            <button class="member">Sign up</button>
+        </div>
+    </header>
+
+    <!-- <div class="backgroundvideo">
+        <video autoplay loop muted playsinline>
+            <source src="../Images/Cloud Heaven Copyrights Free Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div> -->
+
+    <main>
+        <section class="flight-search">
+            <h2>Search for Flights</h2>
+            <form id="flightSearchForm">
+                <div class="input-group">
+                    <label for="from">From</label>
+                    <input type="text" id="from" name="from" placeholder="Enter departure city (e.g., JFK)" required>
+                </div>
+                <div class="input-group">
+                    <label for="to">To</label>
+                    <input type="text" id="to" name="to" placeholder="Enter destination (e.g., LHR)" required>
+                </div>
+                <div class="input-group">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+                <div class="input-group">
+                    <label for="return">Return</label>
+                    <input type="date" id="return" name="return">
+                </div>
+                <div class="input-group">
+                    <label for="passengers">Passengers</label>
+                    <input type="number" id="passengers" name="passengers" min="1" value="1" required>
+                </div>
+                <button type="submit" class="search-btn">Search Flights</button>
+            </form>
+        </section>
+
+        <section class="flight-results">
+            <h2>Flight Results</h2>
+            <div id="resultsContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                    <li><a href="#">Report an Issue</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Terms & Settings</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Language & Currency</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Volare. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="../app/app.js" >  </script>
+
+
+</body>
+</html>

@@ -8,7 +8,7 @@
     <title>Volare Booking</title>
     <!--Font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/flights.css">
 </head>
 <body>
     <header class="header">
@@ -33,7 +33,7 @@
                         <a href="/index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="flights.html" class="nav-link">Flights</a>
+                        <a href="/products/flights.html" class="nav-link">Flights</a>
                     </li>
                     <li class="nav-item">
                         <a href="/products/hotels.html" class="nav-link">Hotels</a>
@@ -42,7 +42,7 @@
                         <a href="#" class="nav-link">Car Rentals</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="/products/contact.html" class="nav-link">Contact</a>
                     </li>
                 
                 <div class="button">
@@ -55,45 +55,59 @@
     </header>
 
     <main>
-        <section class="contact">
-            <div class="container">
-                
-                <div class="contact-content">
-                    <div class="traveler-wrap">
-                        <img src="/images/607bc97278d52e224f25cb2c85f7664b_w.jpeg">
+
+    <section class="booking">
+        <div class="container">
+            <h2 class="section-heading">Book Your Flight</h2>
+            <form class="booking-form">
+                <div class="form-grid">
+                    <div class="input-flight">
+                        <label for="fromairport" class="input-label-flight">From</label>
+                        <input type="text" class="flightinput" id="fromairport" placeholder="For example, JFK">
                     </div>
-            
-                    <form action="" class="form contact-form">
-                        <h5 class="section-head">
-                            <span class="heading">Contact</span>
-                            <span class="sub-heading">We'd love to hear from you! Please fill out the form below to get in touch.</span>
-                        </h5>
-                        <div class="input-group-wrap">
-                            <div class="input-group">
-                                <input type="text" class="input" placeholder="Your Name" required>
-                                <span class="bar"></span>
-                            </div>
-                            <div class="input-group">
-                                <input type="email" class="input" placeholder="Your E-mail" required>
-                                <span class="bar"></span>
-                            </div>
-                        </div>
-                            
-                        <div class="input-group">
-                            <textarea class="input" cols="30" rows="8" placeholder="Your Message" required></textarea>
-                            <span class="bar"></span>
-                        </div>
-                        <button type="submit" class="sendmessage">Send Message
-                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
-                        </button>
-                    </form>
+                    <div class="input-flight">
+                        <label for="toairport" class="input-label-flight">To</label>
+                        <input type="text" class="flightinput" id="toairport" placeholder="For example, LAX">
+                    </div>
+                    <div class="input-flight">
+                        <label for="leave" class="input-label-flight">Leave</label>
+                        <input type="date" class="flightinput" id="leave">
+                    </div>
+                    <div class="input-flight">
+                        <label for="return" class="input-label-flight">Return</label>
+                        <input type="date" class="flightinput" id="return">
+                    </div>
+                    <div class="input-flight">
+                        <label for="adults" class="input-label-flight">Adults</label>
+                        <select class="options" id="adults">
+                            <option value="0">0 Adults</option>
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                            <option value="5">5 Adults</option>
+                        </select>
+                    </div>
+                    <div class="input-flight">
+                        <label for="children" class="input-label-flight">Children</label>
+                        <select class="options" id="children">
+                            <option value="0">0 Children</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                            <option value="3">3 Children</option>
+                            <option value="4">4 Children</option>
+                            <option value="5">5 Children</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                <button type="submit" class="searchflights">
+                    Search Flights
+                </button>
+            </form>
+        </div>
+    </section>
 
-
-
+</main>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -136,11 +150,9 @@
                 <div class="social-media-wrap">
                     <h4 class="footer-heading">Follow us</h4>
                     <div class="social-media">
-                        <a href="#" class="sm-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="sm-link"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" class="sm-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="sm-link"><i class="fab fa-pinterest"></i></a>
-                        <a href="#" class="sm-link"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="sm-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="sm-link"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 
@@ -155,4 +167,3 @@
     <!--Footer section end-->
     <script src="/js/main.js"></script>
 </body>
-</html>

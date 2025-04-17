@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="./hotels.css">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <h1 class="logo">Volare</h1>
+            <nav>
+                <a href="../products/index.html">Home</a>
+                <a href="../products/flights.html">Flights</a>
+                <a href="../products/hotels.html">Hotels</a>
+                <a href="../products/rentals.html">Car Rentals</a>
+                <a href="../products/contact.html">Contact</a>
+                <div class="topnav">
+                    <input type="text" placeholder="Search..">
+                </div>
+            </nav>
+        </div>
+
+        <div class="button">
+            <button class="signin" onclick="myFunction()">Sign in</button>
+            <button class="member">Sign up</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Hotel Search</h1>
+            <form id="hotel-search-form">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required placeholder="Enter city">
+
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-out Date:</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label for="rooms">Rooms:</label>
+                <select id="rooms" name="rooms">
+                    <option value="1">1 room</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                    <option value="4">4 rooms</option>
+                </select>
+
+                <label for="adults">Adults per room:</label>
+                <select id="adults" name="adults">
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                </select>
+
+                <button type="submit">Search Hotels</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Cancellation Options</a></li>
+                    <li><a href="#">Report an Issue</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Terms & Settings</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Language & Currency</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Volare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./hotelsearch.js"></script>
+</body>
+</html>

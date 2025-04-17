@@ -1,0 +1,180 @@
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --blue-solid: #0057a3;
+    --blue-light: #4fa3ff;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--blue-light));
+    --gradient-color-alt: linear-gradient(to right, var(--blue-light), var(--yellow-solid));
+}
+
+/*Global styles*/
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/*Reusable styles*/
+.btn {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 3.5rem;
+    border: none;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.form-btn {
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.btn-gradient {
+    background-image: var(--gradient-color);
+}
+
+.btn-gradient:hover {
+    background-image: var(--gradient-color-alt);
+}
+
+.signin {
+    background-image: var(--gradient-color);
+    color: white;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.signin:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    background-image: var(--gradient-color-alt);
+}
+
+.main-heading {
+    position: relative;
+    z-index: 1;
+    color: white;
+    line-height: 1;
+    text-shadow: 1px 1px 1rem black;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 3.6rem;
+    font-weight: 300;
+    font-family: 'Courgette', cursive;
+    color: white;
+    text-transform: none;
+}
+
+/* Sign-in form styles */
+.signin-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.input-label {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.form-footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.member {
+    color: var(--blue-solid);
+    font-weight: bold;
+}
+
+.member:hover {
+    color: var(--blue-light);
+}
+
+/*Footer section styles*/
+.footer {
+    padding: 5rem 0;
+    background-color: var(--blue-solid);
+    color: white;
+    text-align: center;
+}
+
+.footer-bottom {
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .signin-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .signin {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}

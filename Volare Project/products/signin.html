@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/signup.css"> 
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sign In</h1>
+        <form id="signin-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn-blue">Sign In</button>
+        </form>
+
+        <div id="error-message" style="color: red; margin-top: 10px;"></div>
+
+        <p>Don't have an account? <a href="./signup.html">Sign up here</a></p>
+    </div>
+
+    <script>
+        document.getElementById('signin-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            errorMessage.textContent = '';
+
+            if (!email || !password) {
+                errorMessage.textContent = 'Please fill out all fields';
+                return;
+            }
+
+            // Add your sign-in logic here
+            errorMessage.textContent = 'This account does not exist!';
+            errorMessage.style.color = 'red';
+        });
+    </script>
+</body>
+</html>

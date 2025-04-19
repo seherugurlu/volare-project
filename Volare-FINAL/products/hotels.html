@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volare Booking</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/hotels.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../images/volare-airlines-logo.png" alt="logo">
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/flights.html" class="nav-link">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/hotels.html" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/carrentals.html" class="nav-link">Car Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/contact.html" class="nav-link">Contact</a>
+                    </li>
+                
+                    <div class="button">
+                        <a href="../products/signin.html">
+                            <button class="signin">Sign in</button>
+                        </a>
+                        <a href="../products/signup.html">
+                            <button class="member">Sign up</button>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="booking">
+        <div class="container">
+            <h2 class="section-heading">Book Your Hotel</h2>
+            <form class="booking-form" id="hotel-search-form">
+                <div class="form-grid">
+                    <div class="input-flight">
+                        <label for="city" class="input-label-flight">City</label>
+                        <input type="text" class="flightinput" id="city" required placeholder="Enter City">
+                    </div>
+                    
+                    <div class="input-flight">
+                        <label for="check-in" class="input-label-flight">Check-in Date</label>
+                        <input type="date" class="flightinput" id="check-in" required>
+                    </div>
+                    <div class="input-flight">
+                        <label for="check-out" class="input-label-flight">Check-out Date</label>
+                        <input type="date" class="flightinput" id="check-out" required>
+                    </div>
+                    <div class="input-flight">
+                        <label for="adults" class="input-label-flight">Adults</label>
+                        <select class="options" id="adults">
+                            <option value="0">0 Adults</option>
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                            <option value="5">5 Adults</option>
+                        </select>
+                    </div>
+                    <div class="input-flight">
+                        <label for="children" class="input-label-flight">Children</label>
+                        <select class="options" id="children">
+                            <option value="0">0 Children</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                            <option value="3">3 Children</option>
+                            <option value="4">4 Children</option>
+                            <option value="5">5 Children</option>
+                        </select>
+                    </div>
+                    <div class="input-flight">
+                        <label for="rooms" class="input-label-flight" >Rooms:</label>
+                        <select class="options" name="rooms" id="rooms">
+                            <option value="1">1 room</option>
+                            <option value="2">2 rooms</option>
+                            <option value="3">3 rooms</option>
+                            <option value="4">4 rooms</option>
+            
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="searchflights">
+                    Search Hotels
+                </button>
+            </form>
+
+
+            
+            <div id="hotelResults" class="hotel-results-section"></div>
+
+            
+            <div id="hotelLoading" class="hotel-loading" style="display: none;">
+              <div class="spinner"></div>
+              <p>Searching for hotels...</p>
+            </div>
+
+
+<div id="hotelError" class="hotel-error" style="display: none;"></div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <section class="hotels">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Browse</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-hotels">
+                    <img src="../images/hotels/Halekulani.jpg" class="hotel-image">
+                    <h5 class="hotel-name">Halekulani</h5>
+                    <span class="hotel-price">From $989/Night</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="https://www.expedia.com/Honolulu-Hotels-Halekulani.h20136.Hotel-Information?chkin=2025-05-02&chkout=2025-05-03&x_pwa=1&rfrr=HSR&pwa_ts=1745016758664&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=213&destination=Hawaii%2C+United+States+of+America&destType=MARKET&neighborhoodId=6048741&latLong=19.896767%2C-155.582779&sort=RECOMMENDED&top_dp=989&top_cur=USD&userIntent=&selectedRoomType=324238791&selectedRatePlan=393997544&searchId=129c3d6f-adb6-4b2e-b5f5-f2dc517a82c1" target="_blank" class="btn btn-gradient">Book Now
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </a>
+                </div>
+                <div class="grid-item featured-hotels">
+                    <img src="../images/hotels/Hotel Principe Di Savoia.jpg" class="hotel-image">
+                    <h5 class="hotel-name">Hotel Principe Di Savoia</h5>
+                    <span class="hotel-price">From $512/Night</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="https://www.expedia.com/Milan-Hotels-Hotel-Principe-Di-Savoia.h4145.Hotel-Information?chkin=2025-05-02&chkout=2025-05-03&x_pwa=1&rfrr=HSR&pwa_ts=1745015738375&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=180012&destination=Milan+%28and+vicinity%29%2C+Lombardy%2C+Italy&destType=MARKET&neighborhoodId=508500&latLong=45.47179%2C9.18617&sort=PROPERTY_CLASS&top_dp=512&top_cur=USD&userIntent=&selectedRoomType=200550535&selectedRatePlan=202850873&searchId=ecce165f-8567-483a-a94f-72a05cb6bdef" target="_blank" class="btn btn-gradient">Book Now
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </a>
+                </div>
+                <div class="grid-item featured-hotels">
+                    <img src="../images/hotels/Sindhorn Kempinski Hotel Bangkok.jpg" class="hotel-image">
+                    <h5 class="hotel-name">Sindhorn Kempinski Hotel</h5>
+                    <span class="hotel-price">From $318/Night</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="https://www.expedia.com/Bangkok-Hotels-Sindhorn-Kempinski-Hotel-Bangkok.h44984860.Hotel-Information?chkin=2025-05-02&chkout=2025-05-03&x_pwa=1&rfrr=HSR&pwa_ts=1745016448052&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=178236&destination=Bangkok+%28and+vicinity%29%2C+Bangkok+Province%2C+Thailand&destType=MARKET&neighborhoodId=553248633976360672&latLong=13.7475%2C100.53601&sort=RECOMMENDED&top_dp=318&top_cur=USD&userIntent=&selectedRoomType=220955410&selectedRatePlan=395700370&searchId=882979de-d929-4f9a-954e-1c9ef153e813" target="_blank" class="btn btn-gradient">Book Now
+                        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-container">
+
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="../products/footer pages/helpcenter.html">Help Center</a></li>
+                        <li><a href="../products/footer pages/faqs.html">FAQs</a></li>
+                        <li><a href="../products/footer pages/cancellations.html">Cancellation Options</a></li>
+                        <li><a href="../products/footer pages/report.html">Report an Issue</a></li>
+                    </ul>
+                </div>
+        
+        
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="../products/footer pages/company.html">Company Info</a></li>
+                        <li><a href="../products/footer pages/career.html">Careers</a></li>
+                        <li><a href="../products/footer pages/press.html">Press</a></li>
+                        <li><a href="../products/footer pages/investor.html">Investor Relations</a></li>
+                    </ul>
+                </div>
+        
+        
+                <div class="footer-section">
+                    <h3>Terms & Settings</h3>
+                    <ul>
+                        <li><a href="../products/footer pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="../products/footer pages/terms.html">Terms of Service</a></li>
+                        <li><a href="../products/footer pages/cookies.html">Cookie Policy</a></li>
+                        <li><a href="../products/footer pages/language.html">Language & Currency</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="social-media-wrap">
+                <h4 class="footer-heading">Follow us</h4>
+                <div class="social-media">
+                    <a href="https://x.com/bookingcom?" target="_blank" class="sm-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/bookingcom/" target="_blank" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/bookingcom/" target="_blank" class="sm-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Volare. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</html>
+    <script src="../js/main.js"></script>
+    <script src="../js/hotels.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volare Booking</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/carrentals.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../images/volare-airlines-logo.png" alt="logo">
+                </a>
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/flights.html" class="nav-link">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/hotels.html" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/carrentals.html" class="nav-link">Car Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../products/contact.html" class="nav-link">Contact</a>
+                    </li>
+                
+                    <div class="button">
+                        <a href="../products/signin.html">
+                            <button class="signin">Sign in</button>
+                        </a>
+                        <a href="../products/signup.html">
+                            <button class="member">Sign up</button>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="booking">
+        <div class="container">
+            <h2 class="section-heading">Rent a Car</h2>
+            <form id="carSearchForm" class="booking-form">
+                <div class="form-grid">
+                    <div class="input-flight">
+                        <label for="pickupLocation" class="input-label-flight">Pickup Location</label>
+                        <input type="text" class="flightinput" id="pickupLocation" placeholder="Airport, city or station" required>
+                    </div>
+                    
+                    <div class="input-flight">
+                        <label for="pickupDate" class="input-label-flight">Pickup Date</label>
+                        <input type="date" class="flightinput" id="pickupDate" required>
+                    </div>
+                    <div class="input-flight">
+                        <label for="pickupTime" class="input-label-flight">Pickup Time</label>
+                        <input type="time" class="flightinput" id="pickupTime" required>
+                    </div>
+                    <div class="input-flight">
+                        <label for="returnDate" class="input-label-flight">Return Date</label>
+                        <input type="date" class="flightinput" id="returnDate" required>
+                    </div>
+                    
+
+                </div>
+                <button type="submit" class="searchflights">
+                    Search
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="popular-brands">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Popular Car Rental Brands</span>
+            </h5>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <a href="https://www.enterprise.ca/en/home.html" target="_blank"><img src="../images/car rental services/rent_1.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.alamo.ca/en/home.html" target="_blank"><img src="../images/car rental services/rent_2.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.hertz.com/rentacar/reservation/" target="_blank"><img src="../images/car rental services/rent_3.jpg" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.fireflycarrental.com/rentalcar/reservation/home" target="_blank"><img src="../images/car rental services/rent_4.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.thrifty.com/ca/en" target="_blank"><img src="../images/car rental services/rent_5.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.budget.ca/en/home" target="_blank"><img src="../images/car rental services/rent_6.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.foxrentacar.com/en.html" target="_blank"><img src="../images/car rental services/rent_7.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.holidayautos.com/home" target="_blank"><img src="../images/car rental services/rent_8.png" alt="Car Rental Brand" class="brand-image"></a> 
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.autounion.gr/" target="_blank"><img src="../images/car rental services/rent_9.png" alt="Car Rental Brand" class="brand-image"></a>
+                </div>
+                <div class="brand-card">
+                    <a href="https://www.avis.ca/en/home" target="_blank"><img src="../images/car rental services/rent_10.png" alt="Car Rental Brand" class="brand-image"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="options">
+
+
+        <div class="car-results">
+            <h3 class="results-heading">Some Options</h3>
+            <div class="results-grid">
+   
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../images/cars/car_1.jpg" alt="Compact Car">
+                        <span class="car-badge">Great Deal</span>
+                    </div>
+                    <div class="car-details">
+                        <h4 class="car-title">Compact Car (VW Polo or similar)</h4>
+                        <div class="car-specs">
+                            <span><i class="fas fa-car"></i> Automatic</span>
+                            <span><i class="fas fa-suitcase"></i> 2 Bags</span>
+                            <span><i class="fas fa-user"></i> 4 Seats</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$32/day</span>
+                            <a href="https://www.expedia.com/Cars" target="_blank">
+                                <button class="btn btn-gradient book-now">Book Now</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+          
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="../images/cars/car_2.jpg" alt="SUV">
+                        <span class="car-badge">Popular Choice</span>
+                    </div>
+                    <div class="car-details">
+                        <h4 class="car-title">SUV (Toyota RAV4 or similar)</h4>
+                        <div class="car-specs">
+                            <span><i class="fas fa-car"></i> Automatic</span>
+                            <span><i class="fas fa-suitcase"></i> 4 Bags</span>
+                            <span><i class="fas fa-user"></i> 5 Seats</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$58/day</span>
+                            <a href="https://www.expedia.com/Cars" target="_blank">
+                                <button class="btn btn-gradient book-now">Book Now</button> 
+                            </a>
+                               
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</section>
+
+
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-container">
+
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="../products/footer pages/helpcenter.html">Help Center</a></li>
+                        <li><a href="../products/footer pages/faqs.html">FAQs</a></li>
+                        <li><a href="../products/footer pages/cancellations.html">Cancellation Options</a></li>
+                        <li><a href="../products/footer pages/report.html">Report an Issue</a></li>
+                    </ul>
+                </div>
+        
+        
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="../products/footer pages/company.html">Company Info</a></li>
+                        <li><a href="../products/footer pages/career.html">Careers</a></li>
+                        <li><a href="../products/footer pages/press.html">Press</a></li>
+                        <li><a href="../products/footer pages/investor.html">Investor Relations</a></li>
+                    </ul>
+                </div>
+        
+        
+                <div class="footer-section">
+                    <h3>Terms & Settings</h3>
+                    <ul>
+                        <li><a href="../products/footer pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="../products/footer pages/terms.html">Terms of Service</a></li>
+                        <li><a href="../products/footer pages/cookies.html">Cookie Policy</a></li>
+                        <li><a href="../products/footer pages/language.html">Language & Currency</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="social-media-wrap">
+                <h4 class="footer-heading">Follow us</h4>
+                <div class="social-media">
+                    <a href="https://x.com/bookingcom?" target="_blank" class="sm-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/bookingcom/" target="_blank" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/bookingcom/" target="_blank" class="sm-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Volare. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/carrentals.js"></script>
+</body>
+</html>
